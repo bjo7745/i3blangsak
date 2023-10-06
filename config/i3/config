@@ -523,3 +523,7 @@ strip_workspace_numbers yes
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu_run -c -l 10 -bw 3 -nf '#8a8a8a' -nb '#323131' -sb '#8a8a8a' -sf '#363636' -fn 'Comic Sans MS Bold-11'"
 bindsym $mod+F1 exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu_command= networkmanager_dmenu -c -bw 3 -l 15 -i -nf '#8a8a8a' -nb '#323131' -sb '#8a8a8a' -sf '#363636' -fn 'Comic Sans MS Bold-11'"
 bindsym $mod+F2 exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu_command= dmenu-bluetooth -c -bw 3 -l 15 -i -nf '#8a8a8a' -nb '#323131' -sb '#8a8a8a' -sf '#363636' -fn 'Comic Sans MS Bold-11'"
+
+bindsym --release F1 exec "bash ~/.config/i3/float-runner.sh alacritty -e ranger"
+bindsym --release F2 exec "bash ~/.config/i3/float-runner.sh alacritty -e alsamixer"
+bindsym --release F3 exec "bash ~/.config/i3/float-runner.sh alacritty -e htop"
